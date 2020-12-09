@@ -11,13 +11,13 @@ Project title: News_Reporter.
 
 4 collaborators:
 
-   Dương Hòa Long - Student1275060 - Hoalong1812020@gmail.com
+   Dương Hòa Long - Student1275060 - (Hoalong1812020@gmail.com)
    	
-   Phạm Quốc Thắng - Student1273525 - tymax2021@gmail.com
+   Phạm Quốc Thắng - Student1273525 - (tymax2021@gmail.com)
    
-   Trần Hoàng Quốc Tài - Student1273014 - ttai8543@gmail.com
+   Trần Hoàng Quốc Tài - Student1273014 - (ttai8543@gmail.com)
     
-   Trịnh Gia Bảo - Student1275081 - baotrinh11121@gmail.com
+   Trịnh Gia Bảo - Student1275081 - (baotrinh11121@gmail.com)
 
 
 ====================================
