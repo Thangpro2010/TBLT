@@ -19,10 +19,10 @@ Project title: News_Reporter.
    
    Trịnh Gia Bảo - Student1275081
 
-Trịnh Gia Bảo
+
 ====================================
 
-eProject documentation at:https://github.com/NguyenHongPhuc1308/eProject_1_group2/tree/main/documentation
+eProject documentation at:https://github.com/Thangpro2010/TBLT/tree/main/document
 
 ====================================
 
