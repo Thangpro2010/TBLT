@@ -1,0 +1,563 @@
+<!-- <!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid19</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="tai.css">
+    <style>
+        .bg-img {
+            /* The image used */
+            background-image: url("images/fb3_Tai.jpg");
+
+            min-height: 734px;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            /* Needed to position the navbar */
+            position: relative;
+        }
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .nav-thang {
+            overflow: hidden;
+        }
+   
+        .bg-img {
+            /* The image used */
+            background-image: url("../images/project/CoronaVirusHeader-Final-3.jpg");
+
+            min-height: 734px;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            /* Needed to position the navbar */
+            position: relative;
+        }
+
+        .navbar-brand {
+            font-size: 2rem;
+            border-bottom-style: solid;
+            border-bottom-color: red;
+        }
+
+        .navbar-nav li a {
+            font-size: 2rem;
+        }
+
+        .navbar-nav li a:hover {
+            border-bottom-style: solid;
+            border-bottom-color: red;
+        }
+
+        .glow {
+            font-size: 74px;
+            color: #fff;
+            text-align: center;
+            -webkit-animation: glow 1s ease-in-out infinite alternate;
+            -moz-animation: glow 1s ease-in-out infinite alternate;
+            animation: glow 1s ease-in-out infinite alternate;
+            font-family: cursive;
+        }
+
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073;
+            }
+
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6;
+            }
+        }
+
+        .footer-thang {
+            background-color: rgb(0, 150, 150);
+            padding: 2rem;
+        }
+
+        .tx1 li {
+            color: white;
+        }
+
+        .tx1 li a {
+            color: white;
+            font-size: 2rem;
+        }
+
+        .tx2 li {
+            color: white;
+        }
+
+        .tx2 p {
+            color: white;
+        }
+
+        .tx2 li a {
+            color: white;
+            font-size: 2rem;
+        }
+
+        .footer-thang2 {
+            background-color: rgb(250, 250, 250);
+            padding: 3rem;
+        }
+
+        .copyright-thang {
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .glyphicon-envelope {
+            color: white;
+        }
+
+        #tx2 {
+            text-align: center;
+        }
+
+        .container .section-feed-back {
+            border-radius: 25px;
+            border: 2px solid #333;
+            padding: 20px;
+            background-color: rgb(250, 250, 250);
+
+        }
+
+        .efi {
+            font-size: 4rem;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(0, 150, 150);
+            text-shadow: 0 0 3px darkgrey;
+        }
+
+        input[type="submit"] {
+            background-color: red;
+            color: whitesmoke;
+            font-size: 1.12em;
+            padding: .2em .6em;
+            border-radius: 2em;
+            border: rosybrown thin solid;
+            box-shadow: lightslategrey 2px 2px 2px;
+        }
+
+        input[type="reset"] {
+            background-color: blue;
+            color: whitesmoke;
+            font-size: 1.12em;
+            padding: .2em .6em;
+            border-radius: 2em;
+            border: rosybrown thin solid;
+            box-shadow: lightslategrey 2px 2px 2px;
+        }
+
+        .creator-thang {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 4rem;
+            text-align: center;
+            color: rgb(0, 150, 150);
+            text-shadow: 0 0 3px darkgrey;
+
+        }
+
+        .col-sm-3 p img:hover {
+            width: 160px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        div.container-thang3 {
+            padding: 10px;
+        }
+
+        .col-sm-3 {
+            opacity: 0.5;
+        }
+
+        .col-sm-3:hover {
+            background-color: rgb(250, 250, 250);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            opacity: 1.0;
+
+        }
+
+        .padding-creator {
+            padding: 10rem;
+        }
+
+        .row {
+            margin: 8px -16px;
+        }
+
+        /* Add padding BETWEEN each column (if you want) */
+        .row,
+        .row>.column {
+            padding: 8px;
+        }
+
+        /* Create four equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 25%;
+        }
+
+        /* Clear floats after rows */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .content {
+            background-color: rgb(250, 250, 250);
+            padding: 10px;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 900px) {
+            .column {
+                width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        .column .content:hover {
+            background-color: rgb(244, 244, 244);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-img">
+        <nav class="navbar navbar-default" role="navigation">
+
+             Brand and toggle get grouped for better mobile display 
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+             Collect the nav links, forms, and other content for toggling 
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="eProject.html">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="covid19.html">Covid-19</a></li>
+                    <li><a href="2020election.html">2020-Election</a></li>
+                    <li><a href="sport.html">Sport</a></li>
+                    <li><a href="#">Healthy</a></li>
+                    <li><a href="feed_back.html">Feed Back</a></li>
+                </ul>
+                <form class="navbar-form navbar-right" action="/action_page.php">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div> /.navbar-collapse 
+        </nav>
+    </div>
+    </div>
+    <div>
+        <marquee class="marquee"
+            style="background-color: #000; color: antiquewhite; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptates consequatur atque hic incidunt
+            dicta id. Ullam, in! Dolor amet odit optio neque illo totam repellat ratione modi necessitatibus fugiat.
+        </marquee>
+        <section>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div style="border-right-style: groove; border-right-color: rgb(250, 250, 250);"
+                        class="col-sm-7 video-thang">
+
+                        <div>
+                            <div id="carousel-id" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+                                    <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+                                    <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="item">
+                                        <img src="../images/project1/cv1.jpg" alt=""
+                                            style="height: 400px;">
+
+                                    </div>
+                                    <div class="item">
+                                        <img src="../images/project1/cv.jpg"
+                                            alt="" style="height: 400px;">
+                                    </div>
+                                    <div class="item active">
+                                        <img src="../images/project1/TASS39689830.jpg" alt=""
+                                            style="height: 400px;">
+                                    </div>
+                                </div>
+                                <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span
+                                        class="glyphicon glyphicon-chevron-left"></span></a>
+                                <a class="right carousel-control" href="#carousel-id" data-slide="next"><span
+                                        class="glyphicon glyphicon-chevron-right"></span></a>
+                            </div>
+
+                            <div class="row">
+
+                                 <div class="column-thang"> 
+                                <div class="col-md-5">
+                                    <div class="content">
+                                        <img src="../images/project1/imagepr/cv19/cv2.jpg" width="122%">
+                                        <a href="cv2.html">
+                                            <p>  Bipartisan group in Congress pushes $908 billion Covid-19 relief
+                                                bill.</p>
+                                        </a>
+
+                                        <div class="meta-data">
+                                            <a href="#" style="color: #000;"><i
+                                                    class="glyphicon glyphicon-thumbs-up"></i>
+                                                08</a>
+                                            <a href="#" style="color: #000;"><i
+                                                    class="glyphicon glyphicon-heart-empty"></i>
+                                                49</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="column-thang"> 
+                                <div class="col-md-5">
+                                    <div class="content">
+                                        <img src="../images/project1/imagepr/cv19/cv4.jpg" width="130%">
+                                        <a href="cv3.html">
+                                            <p> Vietnamese-born Vlogger Brittanya Karma died because COVID-19, Bao Anh and Vietnamese artist mourn. </p>
+                                        </a>
+
+                                        <div class="meta-data">
+                                            <a href="#" style="color: #000;"><i
+                                                    class="glyphicon glyphicon-thumbs-up"></i>
+                                                08</a>
+                                            <a href="#" style="color: #000;"><i
+                                                    class="glyphicon glyphicon-heart-empty"></i>
+                                                49</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="rightcolumn">
+                            <br>
+                            <div class="card">
+                                <div class="fakeimg"><a href="cv4.html"><img
+                                            src="../images/project1/imagepr/cv19/cv6.jpg" width="70%" alt=""></a>
+                                </div>
+                                <span><a href="">First Covid vaccines to be offered to health workers, nursing homes, CDC panel says.</a></span>
+                            </div>
+                            <div class="meta-data">
+                                <a href="#" style="color: #000;"><i class="glyphicon glyphicon-thumbs-up"></i> 08</a>
+                                <a href="#" style="color: #000;"><i class="glyphicon glyphicon-heart-empty"></i> 49</a>
+
+                            </div>
+                            <div class="card">
+                                <div class="fakeimg"><a href="cv5.html"><img
+                                            src="../images/project1/imagepr/cv19/cv7.jpg" width="70%" alt=""></a>
+                                </div><span>
+                                    <a href="">After urging small Thanksgiving, San Jose mayor sorry for gathering that broke Covid rules.</a></span>
+                            </div>
+                            <div class="meta-data">
+                                <a href="#" style="color: #000;"><i class="glyphicon glyphicon-thumbs-up"></i> 08</a>
+                                <a href="#" style="color: #000;"><i class="glyphicon glyphicon-heart-empty"></i> 49</a>
+
+                            </div>
+                            <div class="card">
+                                <div class="fakeimg"><a href="cv6.html"><img
+                                            src="../images/project1/imagepr/cv19/cv9.jpg" width="70%" alt=""></a>
+                                </div><span><a href="">Covid-19 claims life of Chicago-based Polish newsman Jan Krawiec, a Nazi foe and Auschwitz survivor</a></span>
+                            </div>
+                            <div class="meta-data">
+                                <a href="#" style="color: #000;"><i class="glyphicon glyphicon-thumbs-up"></i> 08</a>
+                                <a href="#" style="color: #000;"><i class="glyphicon glyphicon-heart-empty"></i> 49</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="column">
+                        <div class="content">
+                            <img src="../images/project1/imagepr/cv19/cv11.jpg" width="100%">
+                            <a href="cv7.html">Michigan couple married for 47 years die from Covid-19 on the same day.</a>
+
+                            <div class="meta-data">
+                                <a href="#" style="color: #000;"><i class="glyphicon glyphicon-thumbs-up"></i> 08</a>
+                                <a href="#" style="color: #000;"><i class="glyphicon glyphicon-heart-empty"></i> 49</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img src="../images/project1/imagepr/cv19/cv13.jpg" width="100%">
+                            <a href="cv8.html"> Controversial White House coronavirus adviser Scott Atlas resigns.
+                            </a>
+
+                            <div class="meta-data">
+                                <a href="#" style="color: #000;"><i class="glyphicon glyphicon-thumbs-up"></i> 08</a>
+                                <a href="#" style="color: #000;"><i class="glyphicon glyphicon-heart-empty"></i> 49</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img src="../images/project1/imagepr/cv19/cv14.jpg" width="100%" >
+                            <a href="cv9.html">'In triage mode': South Florida food banks worry about dwindling supplies.</a>
+
+
+                            <div class="meta-data">
+                                <a href="#" style="color: #000;"><i class="glyphicon glyphicon-thumbs-up"></i> 08</a>
+                                <a href="#" style="color: #000;"><i class="glyphicon glyphicon-heart-empty"></i> 49</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img src="../images/project1/imagepr/cv19/cv17.jpg" width="100%">
+                            <a href="cv10.html">New Jersey hospital faced superbug outbreak amid Covid surge.</a>
+
+                            <div class="meta-data">
+                                <a href="#" style="color: #000;"><i class="glyphicon glyphicon-thumbs-up"></i> 08</a>
+                                <a href="#" style="color: #000;"><i class="glyphicon glyphicon-heart-empty"></i> 49</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div" style="text-align: center;">
+
+                </div>
+
+                <div class="column">
+                    <div class="content">
+                        <img src="../images/project1/imagepr/cv19/cv19.jpg" width="100%">
+                        <a href="cv11.html">L.A. county official seen dining outdoors after voting to ban outdoor dining.</a>
+
+                        <div class="meta-data">
+                            <a href="#" style="color: #000;"><i class="glyphicon glyphicon-thumbs-up"></i> 08</a>
+                            <a href="#" style="color: #000;"><i class="glyphicon glyphicon-heart-empty"></i> 49</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="../images/project1/imagepr/cv19/cv21.jpg" width="90%">
+                        <a href="cv12.html">
+                            New Orleans swingers' convention led to 41 Covid-19 infections, event organizer says.</a>
+
+                        <div class="meta-data">
+                            <a href="#" style="color: #000;"><i class="glyphicon glyphicon-thumbs-up"></i> 08</a>
+                            <a href="#" style="color: #000;"><i class="glyphicon glyphicon-heart-empty"></i> 49</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="../images/project1/imagepr/cv19/cv22.jpg" width="90%">
+                        <a href="cv13.html">'The most 2020 wedding': Bride with Covid-19 gets married in quarantine.</a>
+
+                        <div class="meta-data">
+                            <a href="#" style="color: #000;"><i class="glyphicon glyphicon-thumbs-up"></i> 08</a>
+                            <a href="#" style="color: #000;"><i class="glyphicon glyphicon-heart-empty"></i> 49</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="../images/project1/imagepr/cv19/cv25.jpg" width="90%">
+                        <a href="cv14.html"> Cyber Monday becomes biggest online shopping day in U.S. history, topping nearly $11 billion in sales.</a>
+
+                        <div class="meta-data">
+                            <a href="#" style="color: #000;"><i class="glyphicon glyphicon-thumbs-up"></i> 08</a>
+                            <a href="#" style="color: #000;"><i class="glyphicon glyphicon-heart-empty"></i> 49</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <br>
+
+    </section>
+    </div>
+    <div class="footer-thang">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 tx3">
+                    <a href="#"><img width="280px" style="margin-top: -38px;"
+                            src="../images/project/TBLT_NEWSPAPER-removebg-preview.png" alt=""></a>
+                </div>
+                <div class="col-md-4 tx1">
+                    <li><a href="eProject.html">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Covid-19</a></li>
+                    <li><a href="#">2020-Election</a></li>
+                    <li><a href="sport.html">Sport</a></li>
+                    <li><a href="#">Healthy</a></li>
+                    <li><a href="feed_back.html">Feed Back</a></li>
+                    <hr>
+                </div>
+                <div class="col-md-4 tx2">
+                    <li><a href="">Contact Us</a></li>
+                    <p><span class="glyphicon glyphicon-envelope"></span> Email: aptech.hcm@fpt.com.vn</p>
+                    <p><span class="glyphicon glyphicon-earphone"></span> Phone: 0987-654-321</p>
+                    <br>
+                    <li><a href="">Location</a></li>
+                    <a href=""><img width="90px" src="../images/project/vietnam.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-thang2">
+        <footer class="copyright-thang">
+            Copy &copy; Website produced by team TBLT. All rights reserved.
+        </footer>
+    </div>
+</body>
+
+</html> -->
