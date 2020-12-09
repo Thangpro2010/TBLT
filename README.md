@@ -1,2 +1,2 @@
 # TBLT
-test: https://thangpro2010.github.io/TBLT/.
+test: https://thangpro2010.github.io/TBLT/eProject.html
