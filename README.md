@@ -9,7 +9,7 @@ Project title: News_Reporter.
 
 ========> Group 5 <=========
 
-3 collaborators:
+4 collaborators:
 
    Dương Hòa Long - Student1275060
    	
