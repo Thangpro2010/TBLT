@@ -22,7 +22,7 @@ Project title: News_Reporter.
 
 ====================================
 
-eProject documentation at:https://github.com/Thangpro2010/TBLT/tree/main/document
+eProject documentation at: https://github.com/Thangpro2010/TBLT/tree/main/document
 
 ====================================
 
